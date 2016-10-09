@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"a crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="content/style.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="scripts/app.js"" type="application/javascript"></script>
+    <script src="scripts/MainController.js" type="application/javascript"></script>
+</head>
+
+<body ng-app="angularApp"> 
+    <div ng-controller="MainController">
+        <header class="container-fluid">
+            <p style="text-align: center; color: yellow">Welcome !!!</p>
+        </header>
+ 
+        <nav class="container-fluid">
+            <ul class="nav navbar-inverse navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="http://www.bing.com/search?q=amazing%20places">Amazing places</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+                <section class="col-sm-9">
+                        <article>
+                            <h2>Wat is Lorem Ipsum?</h2>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <img src=img/image.jpg width=300 height=200 />
+                                </div>
+                                
+                                <input id="smallnumber" type="number">
+                                <p id="numberMessage"></p>
+                                <button onclick="checkNumber()">Submit</button>
+                                <br><br>
+
+                                <div class="col-sm8">
+                                    <p>Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw, toen een onbekende drukker een zethaak met letters nam en ze door elkaar husselde om een font-catalogus te maken. Het heeft niet alleen vijf eeuwen overleefd maar is ook, vrijwel onveranderd, overgenomen in elektronische letterzetting. Het is in de jaren '60 populair geworden met de introductie van Letraset vellen met Lorem Ipsum passages en meer recentelijk door desktop publishing software zoals Aldus PageMaker die versies van Lorem Ipsum bevatten.</p>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article>
+                            <h2>Waar komt het vandaan?</h2>
+                            <p>In tegenstelling tot wat algemeen aangenomen wordt is Lorem Ipsum niet zomaar willekeurige tekst. het heeft zijn wortels in een stuk klassieke latijnse literatuur uit 45 v.Chr. en is dus meer dan 2000 jaar oud. Richard McClintock, een professor latijn aan de Hampden-Sydney College in Virginia, heeft één van de meer obscure latijnse woorden, consectetur, uit een Lorem Ipsum passage opgezocht, en heeft tijdens het zoeken naar het woord in de klassieke literatuur de onverdachte bron ontdekt. Lorem Ipsum komt uit de secties 1.10.32 en 1.10.33 van "de Finibus Bonorum et Malorum" (De uitersten van goed en kwaad) door Cicero, geschreven in 45 v.Chr. Dit boek is een verhandeling over de theorie der ethiek, erg populair tijdens de renaissance. De eerste regel van Lorem Ipsum, "Lorem ipsum dolor sit amet..", komt uit een zin in sectie 1.10.32.
+
+                            Het standaard stuk van Lorum Ipsum wat sinds de 16e eeuw wordt gebruikt is hieronder, voor wie er interesse in heeft, weergegeven. Secties 1.10.32 en 1.10.33 van "de Finibus Bonorum et Malorum" door Cicero zijn ook weergegeven in hun exacte originele vorm, vergezeld van engelse versies van de 1914 vertaling door H. Rackham.</p>
+                        </article>
+                </section>
+                <aside class="col-sm-3">
+                    <ul>
+                        <li id="bullet"><a href="http://www.kbc.be">KBC Touch</a></li>
+                        <li id="bullet"><a href="http://www.ypto.be">Ypto NMBS IT</a></li>
+                        <li id="bullet"><a href="http://www.nbb.be">Nationale Bank Belgie</a></li>
+                    </ul>
+                </aside>
+            </div>            
+        </div>
+
+        <footer class="container-fluid">
+            Copyright 
+            <p>{{ timestamp }}</p>
+        </footer>
+    </div>
+</body>
+
+</html>
