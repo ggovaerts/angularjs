@@ -8,7 +8,7 @@ function onLoad()
 
 function checkNumber()
 {
-    alert('button clicked');
+    alert('button clicked!');
 }
 
 var worker = function()
